@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+        <h1>
+            <a href="/">Home</a>
+            <a href="/listtasks">List All Tasks</a>
+            <a href="/listdevelopers">List All Developers</a>
+            <a href="/newdeveloper">Add New Developer</a>                   
+            <a href="/deletetask">Delete One Task</a>
+            <a href="/deletecompleted">Delete Completed Tasks</a>
+            <a href="/updatetask">Update Task</a>     
+            <a href="/display5">Display 5 Tasks</a>                   
+
+        </h1>
+    <form action="/addtask" method="post">
+        Task Name:
+        <input type="text" name="taskName"/><br />
+        Developer ID:
+        <input type="text" name="developerId"/><br />
+        Task Due:
+        <input type="date" name="taskDue"/><br />
+        Task Status:
+        <select name="taskStatus">
+            <option value=""></option>
+            <option value="InProgress">InProgress</option>
+            <option value="Complete">Complete</option>
+        </select><br />
+        Task Desc:
+        <input type="text" name="taskDesc"/><br />
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
